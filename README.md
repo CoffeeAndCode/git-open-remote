@@ -1,4 +1,4 @@
-# git-open-remote
+# git-remote-open
 
 [![Build Status](https://travis-ci.org/CoffeeAndCode/git-remote-open.svg?branch=master)](https://travis-ci.org/CoffeeAndCode/git-remote-open)
 
