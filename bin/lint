@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+IFS=$'\n\t'
+set -x
+
+rustup component add clippy-preview
+cargo clippy --all -- -D clippy
+
+rustup component add rustfmt-preview
+cargo fmt --all -- --check
+
+cargo check --all --features=fail-on-warnings
