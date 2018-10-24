@@ -1,4 +1,4 @@
-extern crate git_open_remote;
+extern crate git_remote_open;
 extern crate open;
 
 use std::env;
@@ -10,7 +10,7 @@ fn open_file(file_path: &str) -> Result<ExitStatus, std::io::Error> {
 }
 
 fn main() {
-    if !git_open_remote::git_exists() {
+    if !git_remote_open::git_exists() {
         eprintln!("Unable to find git on your system.");
         exit(1);
     }

@@ -24,7 +24,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "git-open-remote"
+name = "git-remote-open"
 version = "0.1.0"
 dependencies = [
  "assert_cmd 0.10.1 (registry+https://github.com/rust-lang/crates.io-index)",

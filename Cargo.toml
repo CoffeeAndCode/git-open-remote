@@ -1,16 +1,16 @@
 [package]
-name = "git-open-remote"
+name = "git-remote-open"
 version = "0.1.0"
 authors = ["Jonathan Knapp <jon@coffeeandcode.com>"]
-homepage = "https://github.com/CoffeeAndCode/git-open-remote"
+homepage = "https://github.com/CoffeeAndCode/git-remote-open"
 description = "Cli helper to quickly open git remote origin url in a browser"
-repository = "https://github.com/CoffeeAndCode/git-open-remote"
-documentation = "https://github.com/CoffeeAndCode/git-open-remote"
+repository = "https://github.com/CoffeeAndCode/git-remote-open"
+documentation = "https://github.com/CoffeeAndCode/git-remote-open"
 readme = "README.md"
 license = "MIT"
 
 [badges]
-travis-ci = { repository = "CoffeeAndCode/git-open-remote" }
+travis-ci = { repository = "CoffeeAndCode/git-remote-open" }
 
 [features]
 fail-on-warnings = []
