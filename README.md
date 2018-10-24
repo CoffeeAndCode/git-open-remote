@@ -9,6 +9,16 @@ your default browser.
 You can also pass in the directory you'd like to open
 as the first argument like `git-remote-open ../some/other/folder`
 
+If you'd like, you can alias the command in your `~/.gitconfig` file which
+would allow you to call `git open` from a project repo.
+
+```ini
+[alias]
+    open = "git-remote-open"
+```
+
+## Installation
+
 This package is not pushed to crates.io, but you can install it directly from
 source by running:
 
