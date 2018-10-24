@@ -14,7 +14,7 @@ would allow you to call `git open` from a project repo.
 
 ```ini
 [alias]
-    open = "git-remote-open"
+open = "!git-remote-open"
 ```
 
 ## Installation
