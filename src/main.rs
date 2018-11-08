@@ -1,4 +1,17 @@
+//! git-remote-open's a small cli app to quickly open your git remote url.
+//!
+//! If called without arguments it will use the current directory when looking
+//! for the git remote to use. If `origin` is not found, an error is output.
+//!
+//! If interested, you can add an `alias` entry to your global .gitconfig file
+//! similar to:
+//!
+//! ```
+//! [alias]
+//! open = "!git-remote-open"
+//! ```
 #![cfg_attr(feature = "strict", deny(warnings))]
+#![warn(missing_docs)]
 
 extern crate git_remote_open;
 extern crate open;

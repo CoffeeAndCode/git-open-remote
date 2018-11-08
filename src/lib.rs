@@ -1,4 +1,6 @@
+//! Helper methods for git-remote-open's cli command.
 #![cfg_attr(feature = "strict", deny(warnings))]
+#![warn(missing_docs)]
 
 use std::process::{Command, Stdio};
 
