@@ -11,6 +11,7 @@
 //! open = "!git-remote-open"
 //! ```
 #![cfg_attr(feature = "strict", deny(warnings))]
+#![forbid(unsafe_code)]
 #![warn(missing_docs)]
 
 extern crate git_remote_open;

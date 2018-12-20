@@ -5,7 +5,7 @@ IFS=$'\n\t'
 set -x
 
 rustup component add clippy-preview
-cargo clippy --all -- -D clippy:all
+cargo clippy --all -- -D warnings
 
 rustup component add rustfmt-preview
 cargo fmt --all -- --check
