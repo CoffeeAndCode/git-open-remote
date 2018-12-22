@@ -28,6 +28,9 @@ cargo install --force git-remote-open --git https://github.com/CoffeeAndCode/git
 
 ## Development
 
+Start by running `bin/setup` so you can manage Cargo dependencies with
+the [cargo-edit crate](https://crates.io/crates/cargo-edit).
+
 The project uses [clippy](https://github.com/rust-lang-nursery/rust-clippy) for
 linting. It will also use [rustfmt](https://github.com/rust-lang-nursery/rustfmt)
 to format all Rust files.
