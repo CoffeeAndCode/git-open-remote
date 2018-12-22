@@ -1,5 +1,6 @@
 //! Helper methods for git-remote-open's cli command.
 #![cfg_attr(feature = "strict", deny(warnings))]
+#![deny(clippy::all)]
 #![forbid(unsafe_code)]
 #![warn(missing_docs)]
 
