@@ -15,9 +15,8 @@
 #![forbid(unsafe_code)]
 #![warn(missing_docs)]
 
-extern crate git_remote_open;
-extern crate open;
-
+use git_remote_open;
+use open;
 use std::env;
 use std::path::Path;
 use std::process::{exit, Command, ExitStatus};
