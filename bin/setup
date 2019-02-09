@@ -4,4 +4,6 @@ set -euo pipefail
 IFS=$'\n\t'
 set -x
 
-cargo install cargo-edit
+cargo install cargo-audit --force
+cargo install cargo-edit --force
+cargo install cargo-outdated --force
