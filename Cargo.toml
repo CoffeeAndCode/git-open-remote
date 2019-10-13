@@ -1,6 +1,6 @@
 [package]
 name = "git-remote-open"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Jonathan Knapp <jon@coffeeandcode.com>"]
 homepage = "https://github.com/CoffeeAndCode/git-remote-open"
 description = "Cli helper to quickly open git remote origin url in a browser"
@@ -19,7 +19,7 @@ travis-ci = { repository = "CoffeeAndCode/git-remote-open" }
 strict = []
 
 [dependencies]
-open = "1.2"
+open = "1.3.2"
 
 [dev-dependencies]
 assert_cmd = "0.10"
