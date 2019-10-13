@@ -7,7 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased] - `master` branch
 
-Nothing so far.
+### Removed
+
+- removed `.tool-versions` file with hardcoded Rust toolchain version
+- removed blank `rustfmt.toml` file
 
 ## [0.2.0] - 2019-10-13
 
