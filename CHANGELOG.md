@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - removed `.tool-versions` file with hardcoded Rust toolchain version
 - removed blank `rustfmt.toml` file
+- removed `assert_cmd` dependency
 
 ## [0.2.0] - 2019-10-13
 
