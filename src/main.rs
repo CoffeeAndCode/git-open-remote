@@ -21,8 +21,14 @@ use std::env;
 use std::path::Path;
 use std::process::{exit, Command, ExitStatus};
 
+fn git_url_to_https(url: &str) -> String {
+    url.replace("git@bitbucket.org:", "https://bitbucket.org/")
+        .replace("git@github.com:", "https://github.com/")
+        .replace("git@gitlab.com:", "https://gitlab.com/")
+}
+
 fn open_file(file_path: &str) -> Result<ExitStatus, std::io::Error> {
-    open::that(file_path)
+    open::that(git_url_to_https(file_path))
 }
 
 fn main() {
@@ -49,4 +55,28 @@ fn main() {
         println!("Unable to open {}", output.to_string().trim());
         exit(3);
     }
+}
+
+#[test]
+fn test_git_url_for_bitbucket() {
+    assert_eq!(
+        "https://bitbucket.org/CoffeeAndCode/git-remote-open.git",
+        git_url_to_https("git@bitbucket.org:CoffeeAndCode/git-remote-open.git")
+    )
+}
+
+#[test]
+fn test_git_url_for_github() {
+    assert_eq!(
+        "https://github.com/CoffeeAndCode/git-remote-open.git",
+        git_url_to_https("git@github.com:CoffeeAndCode/git-remote-open.git")
+    )
+}
+
+#[test]
+fn test_git_url_for_gitlab() {
+    assert_eq!(
+        "https://gitlab.com/CoffeeAndCode/git-remote-open.git",
+        git_url_to_https("git@gitlab.com:CoffeeAndCode/git-remote-open.git")
+    )
 }
