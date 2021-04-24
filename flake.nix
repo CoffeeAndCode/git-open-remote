@@ -1,6 +1,9 @@
 {
   inputs = {
-    naersk.url = "github:nmattia/naersk";
+    naersk = {
+      url = "github:nmattia/naersk";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     utils.url = "github:numtide/flake-utils";
   };
 
